@@ -1,0 +1,478 @@
+/* ============= RESET ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============= BODY ============= */
+body {
+    background: linear-gradient(145deg, #0A0F1E 0%, #141B33 100%);
+    font-family: 'Segoe UI', 'Poppins', Tahoma, sans-serif;
+    color: #fff;
+    /* min-height: 100vh; */
+    /* animation: fadeIn 1s ease-out; */
+}
+
+/* تأثير ظهور الصفحة */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============= الحاوية الرئيسية ============= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ============= الهيدر ============= */
+header {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 50px;
+    padding: 18px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+header:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* الشعار */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: pulseText 2s infinite;
+}
+
+/* تموج الشعار */
+@keyframes pulseText {
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* روابط القائمة */
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* الخط السفلي للروابط */
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #6C63FF, #FF6584);
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #FF6584;
+    transform: translateY(-3px);
+    display: inline-block;
+}
+
+/* ============= قسم الترحيب ============= */
+.hero {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.1), rgba(255, 101, 132, 0.05));
+    border-radius: 40px;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    border: 1px solid rgba(108, 99, 255, 0.3);
+    transition: all 0.4s;
+}
+
+.hero:hover {
+    transform: translateY(-5px);
+    border-color: rgba(108, 99, 255, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    animation: slideDown 0.8s ease;
+}
+
+/* نزول العنوان من فوق */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* النص المتدرج الألوان */
+.gradient-text {
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    animation: fadeUp 0.8s ease 0.2s both;
+}
+
+/* طلوع النص من تحت */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* الزر */
+.btn-glow {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 35px;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    animation: bounce 2s infinite;
+}
+
+/* حركة القفز الخفيفة */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.btn-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.4);
+    animation: none;
+}
+
+/* ============= عناوين الأقسام ============= */
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 0 30px;
+    position: relative;
+}
+
+/* خط تحت العنوان */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #6C63FF, #FF6584);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* ============= بطاقات الإحصائيات ============= */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 35px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: cardAppear 0.6s ease both;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+/* تأخير ظهور كل بطاقة */
+.stat-card:nth-child(1) {
+    --i: 1;
+}
+
+.stat-card:nth-child(2) {
+    --i: 2;
+}
+
+.stat-card:nth-child(3) {
+    --i: 3;
+}
+
+.stat-card:nth-child(4) {
+    --i: 4;
+}
+
+/* ظهور البطاقات بتأثير تكبير */
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background: rgba(108, 99, 255, 0.15);
+    border-color: rgba(108, 99, 255, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* ============= بطاقات الأكواد ============= */
+.code-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.code-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    padding: 25px;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: cardFloat 0.6s ease forwards;
+    animation-delay: calc(var(--j) * 0.1s);
+}
+
+.code-card:nth-child(1) {
+    --j: 1;
+}
+
+.code-card:nth-child(2) {
+    --j: 2;
+}
+
+.code-card:nth-child(3) {
+    --j: 3;
+}
+
+/* ظهور البطاقات من اليمين */
+@keyframes cardFloat {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.code-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+    background: rgba(108, 99, 255, 0.12);
+    border-color: #6C63FF;
+}
+
+.code-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #6C63FF;
+}
+
+/* صندوق الكود */
+pre {
+    background: #0A0F1E;
+    padding: 15px;
+    border-radius: 15px;
+    overflow-x: auto;
+    font-size: 0.75rem;
+    font-family: 'Courier New', monospace;
+    margin: 15px 0;
+    border-left: 3px solid #6C63FF;
+}
+
+/* الشارة */
+.badge {
+    display: inline-block;
+    background: rgba(108, 99, 255, 0.3);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+
+/* ============= قسم التاسكات ============= */
+.tasks-section {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.08), rgba(255, 101, 132, 0.05));
+    border-radius: 35px;
+    padding: 35px;
+    margin: 50px 0;
+    transition: 0.3s;
+}
+
+.tasks-section:hover {
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.2);
+}
+
+/* قائمة التاسكات */
+.task-list {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.task-list li {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.task-list li:hover {
+    background: rgba(108, 99, 255, 0.15);
+    transform: translateX(-5px);
+}
+
+/* مربع الاختيار */
+.task-list input {
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #6C63FF;
+}
+
+/* صندوق الفكرة */
+.idea-box {
+    background: rgba(108, 99, 255, 0.15);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+/* ============= الفوتر ============= */
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* الأيقونات الاجتماعية */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons span:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #FF6584;
+}
+
+/* ============= رسبونسيف (جوال) ============= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 30px;
+    }
+
+    nav a {
+        margin: 0 12px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
