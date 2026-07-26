@@ -1,0 +1,189 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .di {
+     /* margin-top: 1rem; */
+     margin: 2rem 5rem;
+ }
+
+ body {
+     background: linear-gradient(145deg, #0A0F1E 0%, #141B33 100%);
+     font-family: 'Segoe UI', 'Poppins', Tahoma, sans-serif;
+     color: #fff;
+
+ }
+
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ li,
+ span,
+ div {
+     direction: rtl;
+     /* النص من اليمين لليسار */
+     text-align: right;
+     /* النص يبدأ من اليمين */
+     unicode-bidi: embed;
+     /* يخلط العربي مع الإنجليزي بشكل مرتب */
+ }
+
+ @keyframes joudi {
+     0% {
+         opacity: 0.8;
+     }
+
+     50% {
+         opacity: 1;
+         text-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+     }
+
+     100% {
+         opacity: 0.8;
+     }
+ }
+
+ .d1 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 5rem;
+     /* border: 1px white solid; */
+     border-radius: 2rem;
+     padding-right: 3rem;
+     animation: joudi3 2s infinite;
+     transition: all 0.3s ease;
+
+ }
+
+ .d1:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 20px 30px rgba(108, 99, 255, 0.4);
+ }
+
+ #di-sp {
+     margin-bottom: 1rem;
+ }
+
+
+ .d-p1 {
+     margin: 2rem 5rem;
+
+ }
+
+ #sha-p1 {
+     width: 60%;
+ }
+
+ .perent {
+     margin-top: 6rem;
+ }
+
+ #co1 {
+     font-size: 20px;
+
+ }
+
+ #co {
+     font-size: 15px;
+     width: 40%;
+     height: 40%;
+ }
+
+ .d1 h2 {
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     margin-bottom: 1rem;
+ }
+
+ @keyframes joudi3 {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-5px);
+     }
+ }
+
+ .code-box {
+     border: 1px white solid;
+     border-radius: 2rem;
+     text-align: center;
+
+ }
+
+ .bt button {
+     margin-right: 2rem;
+     border: none;
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     font-size: 18px;
+     margin-bottom: 1rem;
+ }
+
+ .bt button a {
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     text-decoration: none;
+ }
+
+ .bt1 button {
+     /* margin-left: rem; */
+     margin-top: 1rem;
+     /* margin-bottom: 15rem; */
+     background-color: rgba(255, 255, 255, 0);
+     padding: 0.5rem 4rem;
+     border-radius: 2rem;
+     animation: joudi3 2s infinite;
+
+
+ }
+
+ .bt1 button a {
+     font-size: 20px;
+     text-decoration: none;
+     /* animation: joudi2 0.8s ease 0.2s both; */
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     /* animation: joudi2 2s infinite; */
+
+ }
+
+ .ri-arrow-right-circle-fill,
+ .bt button:hover {
+     animation: joudi2 1s;
+     text-shadow: 0 0 5px rgba(179, 175, 252, 0.5);
+ }
+
+ .ri-arrow-right-circle-fill {
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     /* animation: joudi2 0.8s ease 0.2s both; */
+     font-size: 20px;
+     /* animation: joudi2 2s infinite; */
+
+     /* color: rgba(95, 27, 134, 0); */
+ }
+
+ ul li {
+     padding-bottom: 1rem;
+ }

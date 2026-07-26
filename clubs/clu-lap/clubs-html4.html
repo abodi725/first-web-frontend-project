@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/project/fotter.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="clubs-html4-s.css">
+</head>
+
+
+<body>
+    <div class="di">
+        <div class="perent">
+            <div class="d1">
+                <div class="sha">
+
+                    <h2 id="di-sp">📝 الفورم (Forms) في HTML</h2>
+
+                    <h3 id="di-sp">ما هو الفورم؟</h3>
+                    <p id="di-sp">الفورم يستخدم لجمع بيانات من المستخدم مثل: الاسم، البريد، كلمة السر، وغيرها.</p>
+
+                    <h3 id="di-sp">عناصر الفورم الأساسية:</h3>
+                    <ul id="di-sp">
+                        <li id="di-sp"><strong>&lt;form&gt;</strong> : يبدأ الفورم</li>
+                        <li id="di-sp"><strong>&lt;input&gt;</strong> : حقل إدخال (نص، بريد، كلمة سر، إلخ)</li>
+                        <li id="di-sp"><strong>&lt;label&gt;</strong> : نص وصفي للحقل</li>
+                        <li id="di-sp"><strong>&lt;textarea&gt;</strong> : مساحة نصية كبيرة</li>
+                        <li id="di-sp"><strong>&lt;select&gt;</strong> : قائمة منسدلة</li>
+                        <li id="di-sp"><strong>&lt;option&gt;</strong> : خيار داخل القائمة</li>
+                        <li id="di-sp"><strong>&lt;button&gt;</strong> : زر</li>
+                    </ul>
+
+                    <h3 id="di-sp">أنواع الـ Input:</h3>
+                    <ul id="di-sp">
+                        <li id="di-sp"><code>type="text"</code> : نص عادي</li>
+                        <li id="di-sp"><code>type="email"</code> : بريد إلكتروني</li>
+                        <li id="di-sp"><code>type="password"</code> : كلمة سر (تظهر كنقاط)</li>
+                        <li id="di-sp"><code>type="number"</code> : أرقام فقط</li>
+                        <li id="di-sp"><code>type="tel"</code> : رقم هاتف</li>
+                        <li id="di-sp"><code>type="date"</code> : اختيار تاريخ</li>
+                        <li id="di-sp"><code>type="radio"</code> : اختيار واحد فقط</li>
+                        <li id="di-sp"><code>type="checkbox"</code> : اختيار متعدد</li>
+                        <li id="di-sp"><code>type="submit"</code> : زر إرسال</li>
+                        <li id="di-sp"><code>type="reset"</code> : زر مسح</li>
+                        <li id="di-sp"><code>type="color"</code> : اختيار لون</li>
+                        <li id="di-sp"><code>type="range"</code> : شريط تمرير</li>
+                        <li id="di-sp"><code>type="file"</code> : رفع ملف</li>
+                    </ul>
+
+                    <h3 id="di-sp">خصائص مهمة للـ Input:</h3>
+                    <ul id="di-sp">
+                        <li id="di-sp"><code>placeholder</code> : نص تلميحي داخل الحقل</li>
+                        <li id="di-sp"><code>required</code> : الحقل إجباري</li>
+                        <li id="di-sp"><code>readonly</code> : للقراءة فقط</li>
+                        <li id="di-sp"><code>disabled</code> : معطل (ما يقدر يكتب فيه)</li>
+                        <li id="di-sp"><code>value</code> : قيمة افتراضية</li>
+                        <li id="di-sp"><code>min / max</code> : أقل وأكبر قيمة للأرقام</li>
+                    </ul>
+
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+&lt;!-- Basic Form --&gt;
+&lt;form action="#" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" placeholder="Enter your name" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" placeholder="example@email.com"&gt;
+    
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;
+    
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;input type="reset" value="Reset"&gt;
+&lt;/form&gt;
+
+&lt;!-- Radio Buttons (Choose one only) --&gt;
+&lt;h3&gt;Favorite Language:&lt;/h3&gt;
+&lt;input type="radio" id="html" name="lang" value="HTML"&gt;
+&lt;label for="html"&gt;HTML&lt;/label&gt;
+&lt;input type="radio" id="css" name="lang" value="CSS"&gt;
+&lt;label for="css"&gt;CSS&lt;/label&gt;
+&lt;input type="radio" id="js" name="lang" value="JS"&gt;
+&lt;label for="js"&gt;JavaScript&lt;/label&gt;
+
+&lt;!-- Checkboxes (Choose multiple) --&gt;
+&lt;h3&gt;Skills:&lt;/h3&gt;
+&lt;input type="checkbox" id="html5" name="skills" value="HTML"&gt;
+&lt;label for="html5"&gt;HTML&lt;/label&gt;
+&lt;input type="checkbox" id="css3" name="skills" value="CSS"&gt;
+&lt;label for="css3"&gt;CSS&lt;/label&gt;
+&lt;input type="checkbox" id="js" name="skills" value="JS"&gt;
+&lt;label for="js"&gt;JavaScript&lt;/label&gt;
+
+&lt;!-- Select Dropdown --&gt;
+&lt;label for="country"&gt;Select Country:&lt;/label&gt;
+&lt;select id="country" name="country"&gt;
+    &lt;option value=""&gt;-- Select --&lt;/option&gt;
+    &lt;option value="egypt"&gt;Egypt&lt;/option&gt;
+    &lt;option value="jordan"&gt;Jordan&lt;/option&gt;
+    &lt;option value="ksa"&gt;Saudi Arabia&lt;/option&gt;
+    &lt;option value="uae"&gt;UAE&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Textarea (Large text area) --&gt;
+&lt;label for="message"&gt;Message:&lt;/label&gt;
+&lt;textarea id="message" name="message" rows="5" placeholder="Write your message here..."&gt;&lt;/textarea&gt;
+
+&lt;!-- Number Input with min/max --&gt;
+&lt;label for="age"&gt;Age (18-60):&lt;/label&gt;
+&lt;input type="number" id="age" name="age" min="18" max="60" value="25"&gt;
+
+&lt;!-- Date Input --&gt;
+&lt;label for="birthday"&gt;Birthday:&lt;/label&gt;
+&lt;input type="date" id="birthday" name="birthday"&gt;
+
+&lt;!-- Range Slider --&gt;
+&lt;label for="volume"&gt;Volume:&lt;/label&gt;
+&lt;input type="range" id="volume" name="volume" min="0" max="100" value="50"&gt;
+
+&lt;!-- Color Picker --&gt;
+&lt;label for="favcolor"&gt;Favorite Color:&lt;/label&gt;
+&lt;input type="color" id="favcolor" name="favcolor" value="#6C63FF"&gt;
+
+&lt;!-- File Upload --&gt;
+&lt;label for="file"&gt;Upload File:&lt;/label&gt;
+&lt;input type="file" id="file" name="file"&gt;
+
+&lt;!-- Complete Registration Form Example --&gt;
+&lt;h3&gt;Registration Form&lt;/h3&gt;
+&lt;form action="#" method="post"&gt;
+    &lt;div&gt;
+        &lt;label&gt;Full Name:&lt;/label&gt;
+        &lt;input type="text" placeholder="Enter full name" required&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label&gt;Email:&lt;/label&gt;
+        &lt;input type="email" placeholder="Enter email" required&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label&gt;Password:&lt;/label&gt;
+        &lt;input type="password" placeholder="Enter password"&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label&gt;Gender:&lt;/label&gt;
+        &lt;input type="radio" name="gender"&gt; Male
+        &lt;input type="radio" name="gender"&gt; Female
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label&gt;Country:&lt;/label&gt;
+        &lt;select&gt;
+            &lt;option&gt;Select Country&lt;/option&gt;
+            &lt;option&gt;Egypt&lt;/option&gt;
+            &lt;option&gt;Jordan&lt;/option&gt;
+[09/12/47 10:21 م] Joudi Brijawi: &lt;/select&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;input type="checkbox"&gt; I agree to the terms
+    &lt;/div&gt;
+    
+    &lt;input type="submit" value="Register"&gt;
+    &lt;input type="reset" value="Clear"&gt;
+&lt;/form&gt;
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="bt1-2" class="bt1">
+
+            <button> <a href="/project/clubs/html-learn.html">Go Back</a> <i
+                    class="ri-arrow-right-circle-fill"></i></button>
+
+        </div>
+    </div>
+    <div class="d-p1">
+
+        <footer>
+            <div class="fot">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <i id="fo-ico" class="ri-github-fill"></i>
+                    <i id="fo-ico" class="ri-linkedin-box-fill"></i>
+                    <i id="fo-ico" class="ri-mail-line"></i>
+                    <i id="fo-ico" class="ri-twitter-x-line"></i>
+
+                </div>
+                <p>© 2025 Joudi Web. جميع الحقوق محفوظة</p>
+                <div class="footer-email">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:joudi@example.com">joudi@example.com</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

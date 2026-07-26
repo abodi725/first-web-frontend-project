@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/project/fotter.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="clup-css1-s.css">
+</head>
+
+
+
+<body>
+    <div class="di">
+        <div class="perent">
+            <h2 id="ex-p"> شرح خصائص CSS</h2>
+
+            <div class="d1">
+                <div class="sha">
+                    <h3>1. width & height</h3>
+                    <p><strong>width: 60%;</strong> → عرض العنصر 60% من العنصر الأب</p>
+                    <p><strong>height: 7rem;</strong> → ارتفاع العنصر 7 × 16px = 112px</p>
+
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+ /* width & height */
+.element {
+    width: 60%;
+    height: 7rem;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>2. background-color & color</h3>
+                    <p><strong>background-color: rgb(81, 194, 247);</strong> → لون خلفية أزرق فاتح</p>
+                    <p><strong>color: brown;</strong> → لون النص بني</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+
+/* background-color & color */
+.element {
+    background-color: rgb(81, 194, 247);
+    color: brown;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>3. opacity</h3>
+                    <p><strong>opacity: 0.5;</strong> → شفافية العنصر (0=شفاف, 1=غير شفاف)</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+/* opacity */
+.element {
+    opacity: 0.5;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>4. display vs visibility</h3>
+                    <p><strong>display: none;</strong> → يخفي العنصر ويزيل مكانه بالكامل</p>
+                    <p><strong>visibility: hidden;</strong> → يخفي العنصر لكن يبقي مكانه فارغ</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+/* display: none - يخفي ويزيل المكان */
+.hide-display {
+    display: none;
+}
+
+/* visibility: hidden - يخفي لكن يبقي المكان */
+.hide-visibility {
+    visibility: hidden;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>5. font-size & font-family</h3>
+                    <p><strong>font-size: 2rem;</strong> → حجم الخط 2 × 16px = 32px</p>
+                    <p><strong>font-family: Arial, sans-serif;</strong> → نوع الخط</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+/* font-size & font-family */
+.element {
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>6. text-align</h3>
+                    <p><strong>text-align: center;</strong> → توسيط النص أفقيًا</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+   /* text-align */
+.element {
+    text-align: center;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>7. border</h3>
+                    <p><strong>border: solid blue 4px;</strong> → حد: نوعه صلب، لونه أزرق، سماكته 4px</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+ /* border */
+.element {
+    border: solid blue 4px;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>8. padding (المسافة الداخلية)</h3>
+                    <p><strong>padding: 1rem 2rem 3rem 4rem;</strong> → أعلى | يمين | أسفل | يسار</p>
+                    <p>1rem = 16px → أعلى 16px، يمين 32px، أسفل 48px، يسار 64px</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+/* padding */
+.element {
+    padding: 1rem 2rem 3rem 4rem;
+}
+
+/* أو بالتفصيل */
+.element {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>9. margin (المسافة الخارجية)</h3>
+                    <p><strong>margin: 5px auto;</strong> → أعلى/أسفل 5px، يمين/يسار auto (توسيط)</p>
+                </div>
+
+                <div class="code-box">
+                    <pre>
+                    <code>
+/* margin */
+.element {
+    margin: 5px auto;
+}
+
+/* أو بالتفصيل */
+.element {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+}
+                    </code>
+                   </pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pa-ex">
+                <h1 id="ex-p">Example <span class="row"><i class="ri-arrow-down-double-fill"></i></span>
+                    <ul class="ul-drop">
+                        <li>
+                            <div class="ht">
+
+                                <pre><code>
+&lt;div id="div-test"&gt;
+ &lt;h1 class="titlepage"&gt;joudi&lt;/h1&gt;
+&lt;h2 class="titlepage"&gt;alhalabi&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class="my-div"&gt;
+ &lt;h2&gt;prodact title&lt;/h2&gt;
+&lt;p class="para"&gt;&lt;span id="myspan"&gt;jj&lt;/span&gt; this is paragraph&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="cs">
+                                <pre>
+                        <code>
+ #div-test{
+
+                    width: 60%;
+                    height: 7rem;
+                    background-color: rgb(81, 194, 247);
+                    color: blueviolet;
+                    opacity: 0,5;
+                    /* display: none;
+                    visibility: hidden; */
+                    /* شفافية */
+                    }
+                    .titlepage {
+                    color: #c4a1c4;
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                    }
+                    h1 {
+                    text-align: center;
+                    }
+                    .my-div {
+                    background-color: #c4a1c4;
+                    width: 70%;
+                    border: solid blue 4px;
+                    padding: 1rem 2rem 3rem 4rem;
+                    margin: 5 auto;
+                    }
+                        </code>
+                    </pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 id="re-par">the result <i class="ri-verified-badge-line"></i></h1>
+                            <div class="d1">
+
+                                <img src="ph-task1.jpg" alt="">
+
+                            </div>
+
+
+                        </li>
+                    </ul>
+                </h1>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="bt1-2" class="bt1">
+
+        <button> <a href="/project/clubs/css-learn.html">Go Back</a> <i class="ri-arrow-right-circle-fill"></i></button>
+
+    </div>
+    </div>
+    <div class="d-p1">
+
+        <footer>
+            <div class="fot">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <i id="fo-ico" class="ri-github-fill"></i>
+                    <i id="fo-ico" class="ri-linkedin-box-fill"></i>
+                    <i id="fo-ico" class="ri-mail-line"></i>
+                    <i id="fo-ico" class="ri-twitter-x-line"></i>
+
+                </div>
+                <p>© 2025 Joudi Web. جميع الحقوق محفوظة</p>
+                <div class="footer-email">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:joudi@example.com">joudi@example.com</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

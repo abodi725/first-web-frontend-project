@@ -1,0 +1,33 @@
+.fot {
+    margin-top: 5rem;
+    /* margin-left: rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    color: rgb(182, 18, 146);
+}
+
+.social-icons #fo-ico {
+    margin: 1.5rem;
+    font-size: 20px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+#fo-ico:hover {
+    /* animation: joudi2 1s; */
+    color: blueviolet;
+    text-decoration: underline;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+#fo-ico {
+    color: white;
+}

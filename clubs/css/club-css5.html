@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/project/fotter.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="club-css5-s.css">
+</head>
+
+
+
+<body>
+    <div class="di">
+        <div class="perent">
+            <h2 id="ex-p"> القائمة المنسدلة (Dropdown Menu)</h2>
+            <div class="d1">
+                <div class="sha">
+
+
+                    <h3>الفكرة:</h3>
+                    <ul>
+                        <li>القائمة تكون <strong>مخفية</strong> في البداية</li>
+                        <li>عند تمرير الماوس على الزر أو السهم → <strong>تظهر</strong> القائمة</li>
+                        <li>عند إبعاد الماوس → <strong>تختفي</strong> القائمة</li>
+                    </ul>
+
+                    <h3>الخصائص المستخدمة:</h3>
+                    <ul>
+                        <li><strong>display: none;</strong> → يخفي القائمة ويزيل مكانها</li>
+                        <li><strong>display: block;</strong> → يظهر القائمة</li>
+                        <li><strong>position: absolute;</strong> → القائمة تخرج من التدفق (ما تدفش العناصر اللي تحتها)
+                        </li>
+                        <li><strong>top: 100%;</strong> → القائمة تظهر تحت الزر مباشرة</li>
+                        <li><strong>z-index: 1;</strong> → القائمة تظهر فوق العناصر الثانية</li>
+                        <li><strong>.dropdown:hover .dropdown-content</strong> → يحدد عنصر القائمة عند hover على الحاوية
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+            <div class="code-box1">
+                <pre><code>
+&lt;div class="dropdown"&gt;
+    &lt;button class="dropbtn"&gt;القائمة ▼&lt;/button&gt;
+    &lt;div class="dropdown-content"&gt;
+        &lt;a href="#"&gt;🏠 الرئيسية&lt;/a&gt;
+        &lt;a href="#"&gt;👤 من نحن&lt;/a&gt;
+        &lt;a href="#"&gt;🛠️ خدماتنا&lt;/a&gt;
+        &lt;a href="#"&gt;📞 اتصل بنا&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+
+            <div class="code-box1">
+                <pre><code>
+/* الحاوية الرئيسية */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* الزر */
+.dropbtn {
+    background-color: #6C63FF;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* القائمة - مخفية في البداية */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1a1a2e;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+/* روابط القائمة */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* تأثير hover على الروابط */
+.dropdown-content a:hover {
+    background-color: #6C63FF;
+    border-radius: 8px;
+}
+
+/* إظهار القائمة عند hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* تأثير hover على الزر */
+.dropdown:hover .dropbtn {
+    background-color: #FF6584;
+}
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+
+            <h2 id="ex-p"> أنواع القوائم المنسدلة (Dropdown Menu)</h2>
+            <div class="d1">
+                <div class="sha">
+                    <h3>🔹 النوع 1: القائمة تنزل لتحت (Down)</h3>
+                    <ul>
+                        <li>تظهر أسفل الزر مباشرة</li>
+                        <li>تستخدم <code>top: 100%;</code></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="code-box1">
+                <pre><code>
+&lt;div class="dropdown-item"&gt;
+    &lt;h3&gt;▼ نزول لتحت&lt;/h3&gt;
+    &lt;div class="dropdown dropdown-down"&gt;
+        &lt;button class="dropbtn"&gt;القائمة ▼&lt;/button&gt;
+        &lt;div class="dropdown-content"&gt;
+            &lt;a href="#"&gt;الرئيسية&lt;/a&gt;
+            &lt;a href="#"&gt;من نحن&lt;/a&gt;
+            &lt;a href="#"&gt;الخدمات&lt;/a&gt;
+            &lt;a href="#"&gt;اتصل بنا&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+
+            <div class="code-box1">
+                <pre><code>
+
+    /* النوع 1: نزول لتحت */
+    .dropdown-down .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    .dropdown-down:hover .dropdown-content {
+        display: block;
+    }
+
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+            <div class="d1">
+                <div class="sha">
+
+                    <h3>🔹 النوع 2: القائمة تطلع لفوق (Up)</h3>
+                    <ul>
+                        <li>تظهر فوق الزر</li>
+                        <li>تستخدم <code>bottom: 100%;</code></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="code-box1">
+                <pre><code>
+&lt;div class="dropdown-item"&gt;
+    &lt;h3&gt;▲ طلوع لفوق&lt;/h3&gt;
+    &lt;div class="dropdown dropdown-up"&gt;
+        &lt;button class="dropbtn"&gt;القائمة ▲&lt;/button&gt;
+        &lt;div class="dropdown-content"&gt;
+            &lt;a href="#"&gt;الرئيسية&lt;/a&gt;
+            &lt;a href="#"&gt;من نحن&lt;/a&gt;
+            &lt;a href="#"&gt;الخدمات&lt;/a&gt;
+            &lt;a href="#"&gt;اتصل بنا&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+
+            <div class="code-box1">
+                <pre><code>
+
+    /* النوع 2: طلوع لفوق */
+    .dropdown-up .dropdown-content {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        margin-bottom: 5px;
+    }
+    .dropdown-up:hover .dropdown-content {
+        display: block;
+    }
+    
+
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+            <div class="d1">
+                <div class="sha">
+
+                    <h3>🔹 النوع 3: القائمة من اليمين (Right)</h3>
+                    <ul>
+                        <li>تظهر عن يمين الزر</li>
+                        <li>تستخدم <code>left: 100%;</code></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="code-box1">
+                <pre><code>
+<pre><code>
+&lt;div class="dropdown-item"&gt;
+    &lt;h3&gt;◀️ من اليمين&lt;/h3&gt;
+    &lt;div class="dropdown dropdown-right"&gt;
+        &lt;button class="dropbtn"&gt;القائمة ◀️&lt;/button&gt;
+        &lt;div class="dropdown-content"&gt;
+            &lt;a href="#"&gt;الرئيسية&lt;/a&gt;
+            &lt;a href="#"&gt;من نحن&lt;/a&gt;
+            &lt;a href="#"&gt;الخدمات&lt;/a&gt;
+            &lt;a href="#"&gt;اتصل بنا&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+
+            <div class="code-box1">
+                <pre><code>
+  /* النوع 3: من اليمين */
+    .dropdown-right .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: 5px;
+    }
+    .dropdown-right:hover .dropdown-content {
+        display: block;
+    }
+
+    
+
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+            <div class="d1">
+                <div class="sha">
+
+                    <h3>🔹 النوع 4: القائمة ببطء (Slow / With Animation)</h3>
+                    <ul>
+                        <li>تظهر وتختفي بحركة سلسة</li>
+                        <li>تستخدم <code>opacity</code> و <code>visibility</code> مع <code>transition</code></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="code-box1">
+                <pre><code>
+<pre><code>
+&lt;div class="dropdown-item"&gt;
+    &lt;h3&gt;ببطء (Slow)&lt;/h3&gt;
+    &lt;div class="dropdown dropdown-slow"&gt;
+        &lt;button class="dropbtn"&gt;القائمة ▼&lt;/button&gt;
+        &lt;div class="dropdown-content"&gt;
+            &lt;a href="#"&gt;الرئيسية&lt;/a&gt;
+            &lt;a href="#"&gt;من نحن&lt;/a&gt;
+            &lt;a href="#"&gt;الخدمات&lt;/a&gt;
+            &lt;a href="#"&gt;اتصل بنا&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+
+            <div class="code-box1">
+                <pre><code>
+ 
+    /* النوع 4: ببطء */
+    .dropdown-slow .dropdown-content {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: all 0.4s ease;
+    }
+    .dropdown-slow:hover .dropdown-content {
+        opacity: 1;
+        visibility: visible;
+    }
+        </code></pre>
+
+                <div class="bt">
+                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                </div>
+            </div>
+            <div class="pa-ex">
+                <h1 id="ex-p">Example <span class="row"><i class="ri-arrow-down-double-fill"></i></span>
+                    <ul class="ul-drop">
+                        <li>
+                            <div class="ht">
+
+                                <pre><code>
+              
+&lt;header&gt;
+    &lt;div class="img"&gt;
+        &lt;img src="Screenshot 2026-04-26 191312.png" alt="" /&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;about&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;contact&lt;/a&gt;&lt;/li&gt;
+            &lt;div class="dropdown"&gt;
+                &lt;span&gt;^&lt;/span&gt;
+                &lt;ul class="dropdown-content"&gt;
+                    &lt;li&gt;&lt;a href=""&gt;joudib&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=""&gt;joudibrijawi&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=""&gt;fffoo&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;div class="icons"&gt;
+        &lt;i class=""&gt;$&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="cs">
+                                <pre>
+                        <code>
+
+header {
+    background-color: silver;
+    padding: 0.3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+    font-size: larger;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}   </code>
+                    </pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 id="re-par">the result <i class="ri-verified-badge-line"></i></h1>
+                            <div class="d1">
+
+                                <img src="ph-task5.jpg" alt="">
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </h1>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="bt1-2" class="bt1">
+
+        <button> <a href="/project/clubs/css-learn.html">Go Back</a> <i class="ri-arrow-right-circle-fill"></i></button>
+
+    </div>
+    </div>
+    <div class="d-p1">
+
+        <footer>
+            <div class="fot">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <i id="fo-ico" class="ri-github-fill"></i>
+                    <i id="fo-ico" class="ri-linkedin-box-fill"></i>
+                    <i id="fo-ico" class="ri-mail-line"></i>
+                    <i id="fo-ico" class="ri-twitter-x-line"></i>
+
+                </div>
+                <p>© 2025 Joudi Web. جميع الحقوق محفوظة</p>
+                <div class="footer-email">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:joudi@example.com">joudi@example.com</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

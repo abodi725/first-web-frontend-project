@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/project/fotter.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="club-css3-s.css">
+</head>
+
+
+
+<body>
+    <div class="di">
+        <div class="perent">
+            <h2 id="ex-p"> شرح خصائص CSS</h2>
+            <div class="d1">
+                <div class="sha">
+                    <h3> min-height: 50000px;</h3>
+                    <p><strong>المعنى:</strong> يحدد أقل ارتفاع للعنصر (50000px في هذا المثال)</p>
+                    <p><strong>الاستخدام:</strong> يعطي مساحة كبيرة للتمرير (scroll) لاختبار تأثيرات الـ position</p>
+
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.parent {
+    position: relative;
+}
+      
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 letter-spacing: 2px;</h3>
+                    <p><strong>المعنى:</strong> يضيف مسافة بين الحروف</p>
+                    <p><strong>الاستخدام:</strong> لإعطاء مظهر أنيق وجميل للنصوص</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+                        
+            .spacing {
+            letter-spacing: 2px;
+
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>position: absolute;</h3>
+                    <p><strong>المعنى:</strong> العنصر يخرج من التدفق الطبيعي للصفحة ويوضع بالنسبة لأقرب عنصر أب عنده
+                        position: relative</p>
+                    <p><strong>الخصائص المرافقة:</strong> top, bottom, left, right</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.one {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3> top, left, bottom, right</h3>
+                    <p><strong>المعنى:</strong> تحدد المسافة من حواف العنصر الأب</p>
+                    <ul>
+                        <li><strong>top: 20px;</strong> → يبعد عن الحافة العلوية 20px</li>
+                        <li><strong>left: 20px;</strong> → يبعد عن الحافة اليسرى 20px</li>
+                        <li><strong>bottom: 0;</strong> → يلصق بالحافة السفلية</li>
+                        <li><strong>right: 0;</strong> → يلصق بالحافة اليمنى</li>
+                    </ul>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+  .one {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}                      
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3> z-index</h3>
+                    <p><strong>المعنى:</strong> يحدد ترتيب العناصر فوق بعضها (من الأمام للخلف)</p>
+                    <p><strong>القاعدة:</strong> العنصر ذو الرقم الأكبر يظهر فوق العنصر ذو الرقم الأصغر</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.one { z-index: 3; }   /* يظهر فوق */
+.two { z-index: 2; }
+.three { z-index: 1; } /* يظهر تحت */
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3> position: fixed;</h3>
+                    <p><strong>المعنى:</strong> العنصر يثبت في مكانه حتى عند التمرير</p>
+                    <p><strong>الاستخدام:</strong> للقوائم الثابتة أو أزرار العودة للأعلى</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.fixed-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3> position: sticky;</h3>
+                    <p><strong>المعنى:</strong> العنصر يبقى عادي لحد ما يوصل نقطة معينة ثم يثبت</p>
+                    <p><strong>الاستخدام:</strong> للهيدر أو القوائم التي تلتصق بالأعلى عند التمرير</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+sticky-element {
+    position: sticky;
+    top: 0;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3> ::after (العنصر الوهمي)</h3>
+                    <p><strong>المعنى:</strong> يضيف محتوى وهمي بعد محتوى العنصر الأصلي</p>
+                    <p><strong>الاستخدام:</strong> للإضافات الزخرفية مثل الأيقونات أو الخطوط</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.box::after {
+    content: " ";
+    position: absolute;
+    width: 70%;
+    height: 10px;
+    background-color: blueviolet;
+    bottom: 0;
+    left: 0;
+}
+        </code></pre>
+                    </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>transition</h3>
+                    <p><strong>المعنى:</strong> يضيف حركة سلسة عند تغيير الخاصية</p>
+                    <p><strong>الاستخدام:</strong> لجعل التغيرات تبدو احترافية وسلسة</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.box:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pa-ex">
+                <h1 id="ex-p">Example <span class="row"><i class="ri-arrow-down-double-fill"></i></span>
+                    <ul class="ul-drop">
+                        <li>
+                            <div class="ht">
+
+                                <pre><code>
+ &lt;div class="one"&gt;One&lt;/div&gt;
+&lt;div class="two"&gt;Two&lt;/div&gt;
+&lt;div class="three"&gt;Three&lt;/div&gt;                                   
+
+</code></pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="cs">
+                                <pre>
+                        <code>
+ body {
+    min-height: 50000px;
+}
+
+
+.perent {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    position: relative;
+}
+
+.one,
+.two,
+.three {
+    width: 400px;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: beige;
+    position: absolute;
+
+
+}
+
+.one {
+    background-color: brown;
+    /* position: absolute;
+    bottom: 0; */
+    top: 20px;
+    left: 20px;
+
+    z-index: 3s;
+
+}
+
+.two {
+    background-color: blue;
+    left: 15px;
+    top: 15px;
+    /* position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    position: sticky;
+    top: 0; */
+    z-index: 1;
+}
+
+.three {
+    background-color: chartreuse;
+    /* padding: 2rem; */
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.box {
+    height: 50px;
+    width: 10%;
+    background-color: brown;
+    text-align: center;
+    position: relative;
+}
+
+.box::after {
+    position: absolute;
+    background-color: blueviolet;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 10px;
+
+}
+
+.box:hover {
+    background-color: brown;
+    font-size: 28px;
+    opacity: 0.4;
+}
+
+.box:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+                        </code>
+                    </pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 id="re-par">the result <i class="ri-verified-badge-line"></i></h1>
+                            <div class="d1">
+
+                                <img src="ph-task3.jpg" alt="">
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </h1>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="bt1-2" class="bt1">
+
+        <button> <a href="/project/clubs/css-learn.html">Go Back</a> <i class="ri-arrow-right-circle-fill"></i></button>
+
+    </div>
+    </div>
+    <div class="d-p1">
+
+        <footer>
+            <div class="fot">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <i id="fo-ico" class="ri-github-fill"></i>
+                    <i id="fo-ico" class="ri-linkedin-box-fill"></i>
+                    <i id="fo-ico" class="ri-mail-line"></i>
+                    <i id="fo-ico" class="ri-twitter-x-line"></i>
+
+                </div>
+                <p>© 2025 Joudi Web. جميع الحقوق محفوظة</p>
+                <div class="footer-email">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:joudi@example.com">joudi@example.com</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

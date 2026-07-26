@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/project/fotter.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="club-css2-s.css">
+</head>
+
+
+
+<body>
+    <div class="di">
+        <div class="perent">
+            <h2 id="ex-p"> شرح خصائص CSS</h2>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 text-transform: uppercase;</h3>
+                    <p><strong>المعنى:</strong> يحول كل النص إلى حروف كبيرة (Capital Letters)</p>
+                    <p><strong>الاستخدام:</strong> للعناوين أو النصوص التي تريدين إبرازها</p>
+
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.uppercase {
+    text-transform: uppercase;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 letter-spacing: 2px;</h3>
+                    <p><strong>المعنى:</strong> يضيف مسافة بين الحروف</p>
+                    <p><strong>الاستخدام:</strong> لإعطاء مظهر أنيق وجميل للنصوص</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+                        
+            .spacing {
+            letter-spacing: 2px;
+
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 word-spacing: 20px;</h3>
+                    <p><strong>المعنى:</strong> يضيف مسافة بين الكلمات</p>
+                    <p><strong>الاستخدام:</strong> لتوسيع النص وجعله أكثر وضوحاً</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.word-space {
+    word-spacing: 20px;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 text-decoration: none;</h3>
+                    <p><strong>المعنى:</strong> يزيل أي زخرفة من النص (مثل الخط الذي تحت الروابط)</p>
+                    <p><strong>الاستخدام:</strong> لإزالة الخط من تحت الروابط (Links)</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.no-deco {
+    text-decoration: none;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 الفاصلة (,) بين المحددات</h3>
+                    <p><strong>المعنى:</strong> تطبق نفس التنسيق على عدة عناصر مختلفة</p>
+                    <p><strong>الاستخدام:</strong> لتجنب تكرار الكود</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.div1, .div2, .div3 {
+    background-color: blue;
+    color: white;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h3>📝 cursor: pointer;</h3>
+                    <p><strong>المعنى:</strong> يغير شكل الماوس إلى يد عند المرور على العنصر</p>
+                    <p><strong>الاستخدام:</strong> للأزرار والروابط عشان توضح إنه قابل للضغط</p>
+                </div>
+
+                <div class="code-box">
+                    <pre><code>
+.clickable {
+    cursor: pointer;
+}
+        </code></pre>
+
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pa-ex">
+                <h1 id="ex-p">Example <span class="row"><i class="ri-arrow-down-double-fill"></i></span>
+                    <ul class="ul-drop">
+                        <li>
+                            <div class="ht">
+
+                                <pre><code>
+&lt;div id="div-test"&gt;
+    &lt;h1 class="titlepage"&gt;joudi&lt;/h1&gt;
+    &lt;h2 class="titlepage"&gt;alhalabi&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class="my-div"&gt;
+    &lt;h2&gt;prodact title&lt;/h2&gt;
+    &lt;p class="para"&gt;&lt;span id="myspan"&gt;jj&lt;/span&gt; this is paragraph&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;a href="http://google.com"&gt;home&lt;/a&gt;
+
+&lt;div class="div1"&gt;Div1&lt;/div&gt;
+&lt;div class="div2"&gt;Div2&lt;/div&gt;
+&lt;div class="div3"&gt;Div3&lt;/div&gt;
+
+&lt;div class="square"&gt;&lt;/div&gt;
+
+&lt;div class="circle"&gt;&lt;/div&gt;
+
+&lt;div class="image"&gt;
+    &lt;img src="a1.jpg" alt=""&gt;
+&lt;/div&gt;
+
+&lt;div class="btn-div"&gt;
+    &lt;button class="btn"&gt;Click&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="cs">
+                                <pre>
+                        <code>
+ .my-div .para {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    text-decoration: none;
+
+}
+a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 24px;
+
+}
+.div1,
+.div2,
+.div3 {
+    background-color: cadetblue;
+    margin: 10px 0;
+    padding: 10 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.div1 {
+    border-bottom: 1px solid rgb(6, 46, 107);
+    border-radius: 10px;
+}
+
+.div2 {
+    border-bottom: 1px solid rgb(6, 139, 62);
+    border-radius: 10px;
+}
+
+.div3 {
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+
+
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red, blue);
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.btn-div {
+    margin: auto;
+    width: 7rem;
+}
+
+.btn {
+    background-color: #c4a1c4;
+    color: red;
+    border: none;
+    padding: 0.5rem 4rem;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+                        </code>
+                    </pre>
+                                <div class="bt">
+                                    <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 id="re-par">the result <i class="ri-verified-badge-line"></i></h1>
+                            <div class="d1">
+
+                                <img src="ph-task2.jpg" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d1">
+
+                                <img src="ph-task2-2.jpg" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d1">
+
+                                <img src="ph-task2-3.jpg" alt="">
+
+                            </div>
+                        </li>
+                    </ul>
+                </h1>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="bt1-2" class="bt1">
+
+        <button> <a href="/project/clubs/css-learn.html">Go Back</a> <i class="ri-arrow-right-circle-fill"></i></button>
+
+    </div>
+    </div>
+    <div class="d-p1">
+
+        <footer>
+            <div class="fot">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <i id="fo-ico" class="ri-github-fill"></i>
+                    <i id="fo-ico" class="ri-linkedin-box-fill"></i>
+                    <i id="fo-ico" class="ri-mail-line"></i>
+                    <i id="fo-ico" class="ri-twitter-x-line"></i>
+
+                </div>
+                <p>© 2025 Joudi Web. جميع الحقوق محفوظة</p>
+                <div class="footer-email">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:joudi@example.com">joudi@example.com</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

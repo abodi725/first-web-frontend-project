@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/project/fotter.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="clubs-html3-s.css">
+</head>
+
+<body>
+    <div class="di">
+        <div class="perent">
+            <div class="d1">
+                <div class="sha">
+                    <h2 id="di-sp1">📦 الحاويات في HTML (Div & Span)</h2>
+
+                    <h3 id="di-sp1">ما هي الحاويات؟</h3>
+                    <p id="di-sp1">الحاويات تستخدم لتجميع العناصر وتنظيمها داخل الصفحة.</p>
+
+                    <h3 id="di-sp1">الفرق بين Div و Span:</h3>
+                    <ul id="di-sp1">
+                        <li id="di-sp1"><strong>&lt;div&gt;</strong> : عنصر كتلة (Block) - يأخذ عرض كامل الصفحة ويبدأ
+                            سطر
+                            جديد</li>
+                        <li id="di-sp1"><strong>&lt;span&gt;</strong> : عنصر سطري (Inline) - يأخذ مساحة النص فقط</li>
+                    </ul>
+
+                    <h3 id="di-sp1">متى تستخدمين كل عنصر؟</h3>
+                    <ul id="di-sp1">
+                        <li id="di-sp1"><strong>Div:</strong> لتجميع أقسام كاملة (header, footer, sidebar)</li>
+                        <li id="di-sp1"><strong>Span:</strong> لتنسيق جزء صغير من النص (لون، حجم، خلفية)</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+                    <pre><code>
+&lt;!-- Div Example (block element) --&gt;
+&lt;div style="background-color: #6C63FF; padding: 20px; margin: 10px;"&gt;
+    &lt;h3&gt;This is a Div&lt;/h3&gt;
+    &lt;p&gt;Div takes the full width and starts on a new line.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Span Example (inline element) --&gt;
+&lt;p&gt;
+    This is normal text. 
+    &lt;span style="color: #FF6584; font-weight: bold;"&gt;This text is inside a span&lt;/span&gt;
+    and stays in the same line.
+&lt;/p&gt;
+
+&lt;!-- Multiple Divs for layout --&gt;
+&lt;div style="display: flex; gap: 20px;"&gt;
+    &lt;div style="background: #0A0F1E; padding: 20px; border-radius: 10px;"&gt;
+        &lt;h3&gt;Left Box&lt;/h3&gt;
+        &lt;p&gt;Content here&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style="background: #0A0F1E; padding: 20px; border-radius: 10px;"&gt;
+        &lt;h3&gt;Right Box&lt;/h3&gt;
+        &lt;p&gt;Content here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Nested Divs --&gt;
+&lt;div class="container" style="border: 2px solid #6C63FF; padding: 20px;"&gt;
+    &lt;h2&gt;Outer Div&lt;/h2&gt;
+    &lt;div style="background: rgba(108,99,255,0.1); padding: 15px;"&gt;
+        &lt;p&gt;Inner Div with different background&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Span inside paragraph --&gt;
+&lt;p&gt;
+    &lt;span style="background: yellow; color: black;"&gt;Highlighted text&lt;/span&gt;
+    is very important.
+&lt;/p&gt;
+
+&lt;!-- Div for styling group of elements --&gt;
+&lt;div class="card" style="border: 1px solid #FF6584; border-radius: 15px; padding: 20px; width: 300px;"&gt;
+    &lt;h3&gt;Card Title&lt;/h3&gt;
+    &lt;p&gt;This is a card created with div.&lt;/p&gt;
+    &lt;button style="background: #6C63FF; color: white; padding: 8px 16px;"&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;
+        </code></pre>
+                    </code></pre>
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d1">
+                <div class="sha">
+                    <h2 id="di-sp">🧱 العناصر الدلالية في HTML (Semantic Elements)</h2>
+
+                    <h3 id="di-sp">ما هي العناصر الدلالية؟</h3>
+                    <p id="di-sp">عناصر تحمل معنى واضح لمحركات البحث والمطورين، تصف محتوى الصفحة بشكل مفهوم.</p>
+
+                    <h3 id="di-sp">العناصر الدلالية الرئيسية:</h3>
+                    <ul id="di-sp">
+                        <li id="di-sp"><strong>&lt;header&gt;</strong> : رأس الصفحة (شعار، عنوان، قائمة)</li>
+                        <li id="di-sp"><strong>&lt;nav&gt;</strong> : قائمة الروابط الرئيسية</li>
+                        <li id="di-sp"><strong>&lt;main&gt;</strong> : المحتوى الرئيسي للصفحة</li>
+                        <li id="di-sp"><strong>&lt;section&gt;</strong> : قسم من المحتوى</li>
+                        <li id="di-sp"><strong>&lt;article&gt;</strong> : مقال أو محتوى منفصل</li>
+                        <li id="di-sp"><strong>&lt;aside&gt;</strong> : محتوى جانبي (شريط جانبي)</li>
+                        <li id="di-sp"><strong>&lt;footer&gt;</strong> : تذييل الصفحة (حقوق النشر، روابط)</li>
+                        <li id="di-sp"><strong>&lt;figure&gt;</strong> : صورة مع شرحها</li>
+                        <li id="di-sp"><strong>&lt;figcaption&gt;</strong> : شرح الصورة</li>
+                        <li id="di-sp"><strong>&lt;details&gt;</strong> : قائمة قابلة للطي</li>
+                        <li id="di-sp"><strong>&lt;summary&gt;</strong> : عنوان القائمة القابلة للطي</li>
+                    </ul>
+
+                    <h3 id="di-sp">لماذا نستخدم العناصر الدلالية؟</h3>
+                    <ul id="di-sp">
+                        <li id="di-sp">✅ تحسين SEO (محركات البحث)</li>
+                        <li id="di-sp">✅ تسهيل قراءة الكود</li>
+                        <li id="di-sp">✅ مساعدة قارئات الشاشة للمكفوفين</li>
+                        <li id="di-sp">✅ تنظيم أفضل للصفحة</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+                    <pre><code>
+&lt;!-- Basic HTML Structure with Semantic Elements --&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+        &lt;p&gt;Welcome to my site&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;a href="#"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;About&lt;/a&gt;
+        &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Latest Articles&lt;/h2&gt;
+            
+            &lt;article&gt;
+                &lt;h3&gt;Article Title 1&lt;/h3&gt;
+                &lt;p&gt;This is the content of the first article.&lt;/p&gt;
+            &lt;/article&gt;
+            
+            &lt;article&gt;
+                &lt;h3&gt;Article Title 2&lt;/h3&gt;
+                &lt;p&gt;This is the content of the second article.&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+
+        &lt;aside&gt;
+            &lt;h3&gt;Sidebar&lt;/h3&gt;
+            &lt;p&gt;Related links and ads go here.&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;!-- Figure and Figcaption --&gt;
+&lt;figure&gt;
+    &lt;img src="photo.jpg" alt="Description"&gt;
+    &lt;figcaption&gt;This is a caption for the image&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- Details and Summary (Collapsible content) --&gt;
+&lt;details&gt;
+    &lt;summary&gt;Click to see more information&lt;/summary&gt;
+    &lt;p&gt;This content is hidden until you click the summary above.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;!-- Mark for highlighting --&gt;
+&lt;p&gt;This is &lt;mark&gt;important text&lt;/mark&gt; that is highlighted.&lt;/p&gt;
+
+&lt;!-- Time element --&gt;
+&lt;p&gt;Published on &lt;time datetime="2025-01-15"&gt;January 15, 2025&lt;/time&gt;&lt;/p&gt;
+        </code></pre>
+                    <div class="bt">
+                        <button><a href="#">copy</a><i class="ri-file-copy-line"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="bt1-2" class="bt1">
+
+            <button> <a href="/project/clubs/html-learn.html">Go Back</a> <i
+                    class="ri-arrow-right-circle-fill"></i></button>
+
+        </div>
+    </div>
+    <div class="d-p1">
+
+        <footer>
+            <div class="fot">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <i id="fo-ico" class="ri-github-fill"></i>
+                    <i id="fo-ico" class="ri-linkedin-box-fill"></i>
+                    <i id="fo-ico" class="ri-mail-line"></i>
+                    <i id="fo-ico" class="ri-twitter-x-line"></i>
+
+                </div>
+                <p>© 2025 Joudi Web. جميع الحقوق محفوظة</p>
+                <div class="footer-email">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:joudi@example.com">joudi@example.com</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

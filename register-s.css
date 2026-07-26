@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #0A0F1E 0%, #141B33 100%);
+    font-family: 'Segoe UI', 'Poppins', Tahoma, sans-serif;
+    color: #fff;
+
+}
+
+.perent:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(108, 99, 255, 0.4);
+
+}
+
+.perent {
+    animation: joudi4 0.8s ease-out;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 35rem;
+    border-radius: 1rem;
+    border: white 2px solid;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+
+    margin: 3rem auto;
+}
+
+.perent h1 {
+    margin-top: 2rem;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* padding-bottom: 1rem; */
+}
+
+.perent h1:hover {
+    animation: joudi2 1s;
+
+}
+
+.email,
+.name,
+.pasw {
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 1rem;
+    position: relative;
+
+}
+
+.email label,
+.name label,
+.pasw label {
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+/* .pasw label {
+    margin-bottom: 1rem;
+    font-size: 18px;
+} */
+
+.email input,
+.name input,
+.pasw input {
+    /* border-radius: 0.5rem; */
+    border: none;
+    padding: 0.5rem 19rem;
+    padding-left: 1px;
+    /* animation: joudi2 1s; */
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-bottom: white 1px solid;
+
+
+}
+
+
+
+/* .pasw {
+    margin-top: 0.5rem;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 1rem;
+} */
+
+/* .pasw input {
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: none;
+    padding: 0.5rem 19rem;
+    padding-left: 1px;
+    border-bottom: white 1px solid;
+
+
+} */
+
+
+
+.da {
+    margin-top: 2rem;
+    margin-left: 8rem;
+
+}
+
+.perent .an {
+    text-decoration: none;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-left: 15rem;
+    font-size: 13px;
+}
+
+#j {
+    margin-left: 10rem;
+}
+
+.but button {
+    padding: 0.5rem 8rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-left: 4rem;
+    color: white;
+    border: white 2px solid;
+
+}
+
+.but button:hover {
+    animation: joudi2 1s;
+
+}
+
+.line {
+    margin-top: 6rem;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 1px;
+
+}
+
+.d1 {
+    margin-top: 2rem;
+}
+
+#sp {
+
+    /* padding-top: 1rem; */
+    /* margin-top: -2rem; */
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 13px;
+}
+
+#anc {
+    /* font-size: 13px; */
+    text-decoration: none;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.icon {
+    size: 13px;
+    margin-top: 1rem;
+    /* margin-left: 8rem; */
+}
+
+.icon p {
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 13px;
+
+}
+
+.icon .ic {
+    text-decoration: none;
+    margin-left: 0.3rem;
+    background: linear-gradient(135deg, #716af5, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.li1 {
+    width: 10rem;
+    /* margin-right: 1rem; */
+}
+
+.li2 {
+    width: 10rem;
+}
+
+.m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes joudi3 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes joudi {
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes joudi2 {
+
+    from {
+        /* opacity: 0; */
+        transform: translateY(20px);
+    }
+
+    to {
+        /* opacity: 1; */
+        transform: translateY(0);
+    }
+
+}
+
+
+
+.bt1 button {
+    margin-left: 65rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    animation: joudi3 2s infinite;
+
+}
+
+.bt1 button a {
+    font-size: 20px;
+    text-decoration: none;
+    /* animation: joudi2 0.8s ease 0.2s both; */
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* animation: joudi2 2s infinite; */
+
+}
+
+.ri-arrow-right-circle-fill,
+.bt button:hover {
+    animation: joudi2 1s;
+    text-shadow: 0 0 5px rgba(179, 175, 252, 0.5);
+}
+
+.ri-arrow-right-circle-fill {
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* animation: joudi2 0.8s ease 0.2s both; */
+    font-size: 20px;
+    /* animation: joudi2 2s infinite; */
+
+    /* color: rgba(95, 27, 134, 0); */
+}
+
+
+.m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes slideBox {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* تطبيق الحركة على البوكس */
+.pig {
+    animation: slideBox 0.8s ease-out;
+}
+
+.bt1 button {
+    margin-left: 65rem;
+    margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    animation: joudi3 2s infinite;
+}
+
+.bt1 button a {
+    font-size: 20px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.ri-arrow-right-circle-fill,
+.bt button:hover {
+    animation: joudi2 1s;
+    text-shadow: 0 0 5px rgba(179, 175, 252, 0.5);
+}
+
+.ri-arrow-right-circle-fill {
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+}
+
+/* الحاوية اللي فيها input والأيقونة */
+.email,
+.pasw {
+
+    /* margin-bottom: 20px; */
+}
+
+#j {
+    left: 20rem;
+    /* من اليسار (لأن الموقع عربي) */
+    bottom: 12px;
+    position: absolute;
+    color: #6C63FF;
+    font-size: 25px;
+    cursor: pointer;
+}

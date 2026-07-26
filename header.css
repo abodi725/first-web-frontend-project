@@ -1,0 +1,112 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ header {
+     background: rgba(255, 255, 255, 0.05);
+     border-radius: 50px;
+     padding: 18px 35px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 50px;
+     transition: all 0.3s;
+ }
+
+ header:hover {
+     background: rgba(255, 255, 255, 0.1);
+     /* من شان الجمالية  */
+
+ }
+
+ .d-p {
+     /* margin-top: 1rem; */
+     margin: 2rem 5rem;
+ }
+
+ body {
+     background: linear-gradient(145deg, #0A0F1E 0%, #141B33 100%);
+     font-family: 'Segoe UI', 'Poppins', Tahoma, sans-serif;
+     color: #fff;
+
+ }
+
+ header .n1 .u1 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ header .n1 .u1 li {
+     list-style: none;
+     margin: 2rem;
+
+ }
+
+
+ #ic {
+     color: rgb(67, 158, 201);
+ }
+
+ header .n1 .u1 li a {
+     text-decoration: none;
+     color: rgb(67, 158, 201);
+ }
+
+ header .n1 .u1 li a:hover {
+     text-decoration: underline;
+
+     color: rgb(9, 40, 54);
+ }
+
+ header .n1 .u1 li.active {
+     transform: scale(1.02) translateX(15px);
+     background: #d232e0;
+     color: #1e2a32;
+     box-shadow: 0 5px 15px rgba(255, 170, 51, 0.4);
+     /* transition: all 0.4s cubic-bezier(0.33, 0, 0, 1); */
+ }
+
+ header .n1 .u1 li.active a {
+
+     color: #1e2a32;
+
+ }
+
+ header .n1 .u1 li.active #ic {
+
+     color: #1e2a32;
+
+ }
+
+
+ header .n1 .u1 li a #ic:hover {
+     text-decoration: underline;
+     /* transform: scale(1.2) rotate(10deg); */
+     color: rgb(9, 40, 54);
+
+     /* transition: transform 0.3s ease; */
+ }
+
+ #we {
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     animation: joudi 4s infinite;
+     font-size: 30px;
+
+ }
+
+ .l-o {
+     background: linear-gradient(135deg, #6C63FF, #FF6584);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     animation: joudi 4s infinite;
+     font-size: 30px;
+
+ }
